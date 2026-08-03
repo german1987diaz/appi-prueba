@@ -9476,5 +9476,18 @@ modal.close = function(){
     });
   }
 </script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a24f625ad9475777',t:'MTc4NTY5Nzg0Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
-</html>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a24f625ad9475777',t:'MTc4NTY5Nzg0Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+<script>
+(function(){
+  try{
+    window.estaActivada=function(){return true;};
+    window.chequearBlocklist=async function(){return false;};
+    window.mostrarPantallaBloqueo=function(){const el=document.getElementById('lockScreen');if(el){el.classList.add('hidden');el.style.display='none';}document.body.style.overflow='';};
+    window.mostrarPantallaBloqueado=function(){const el=document.getElementById('lockScreen');if(el){el.classList.add('hidden');el.style.display='none';}document.body.style.overflow='';};
+    const lock=document.getElementById('lockScreen');if(lock){lock.classList.add('hidden');lock.style.display='none';}
+    document.body.style.overflow='';
+    let t=0;const iv=setInterval(()=>{t++;const lk=document.getElementById('lockScreen');if(lk){lk.classList.add('hidden');lk.style.display='none';}document.body.style.overflow='';if(typeof window.iniciarApp==='function'){try{window.iniciarApp();}catch(e){}}if(t>20) clearInterval(iv);},300);
+  }catch(e){}
+})();
+</script>
+</body>
